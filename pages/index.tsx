@@ -34,9 +34,9 @@ const HelloButton: React.FC<{}> = () => {
   </>
 }
 
-const MyComponent: React.FC<{}> = () => {
+const LoginOrCreateAccount: React.FC<{}> = () => {
   const { id, email, loading } = useCredentials()
-  console.log('id, email, loading', id, email, loading)
+
   if (loading) {
     return <div>Please wait...</div>
   } else if (id) {
@@ -66,7 +66,7 @@ const MyPage: React.FC<{}> = () => {
     <div className="row">
       <div className="col-9">
         <h4 className="display-4 mb-5">Usermatic Example Application</h4>
-        <MyComponent/>
+        <LoginOrCreateAccount/>
       </div>
     </div>
   </div>

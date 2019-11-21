@@ -4,7 +4,12 @@ import jwt from 'jsonwebtoken'
 
 const verifyJwt = (authHeader: string | undefined, secret: string) => {
   if (!authHeader) { return undefined }
-  return jwt.verify(authHeader, process.env.UM_SITE_SECRET)
+  try {
+    return jwt.verify(authHeader, process.env.UM_SITE_SECRET)
+  } catch (err) {
+    console.error(err)
+    return undefined
+  }
 }
 
 export default (req, res) => {

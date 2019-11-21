@@ -25,7 +25,7 @@ const HelloButton: React.FC<{}> = () => {
   }
 
   return <>
-    <button onClick={onClick}>Say Hello</button>
+    <button className="btn btn-primary" onClick={onClick}>Say Hello</button>
     { response
       ? <div>
           Got response: <pre>{JSON.stringify(response, null, '  ')}</pre>
@@ -40,8 +40,8 @@ const MyComponent: React.FC<{}> = () => {
   if (loading) {
     return <div>Please wait...</div>
   } else if (id) {
-    return <div>
-      You are logged in as user {id} with email {email}
+    return <div className="p-4 border rounded shadow bg-light">
+      You are logged in as user <code>{id}</code> with email <code>{email}</code>.
       <p/>
       <HelloButton />
       <p/>
@@ -49,16 +49,23 @@ const MyComponent: React.FC<{}> = () => {
     </div>
   } else {
     return <div>
-      <p/>Log in: <UMLoginForm />
-      <p/>Or create an account: <UMAccountCreationForm />
+      <h4>Log in:</h4>
+      <div className="p-4 mb-5 border rounded shadow bg-light">
+        <UMLoginForm />
+      </div>
+      <h4>Or create an account:</h4>
+      <div className="p-4 mb-5 border rounded shadow bg-light">
+        <UMAccountCreationForm />
+      </div>
     </div>
   }
 }
 
 const MyPage: React.FC<{}> = () => {
-  return <div className="container">
+  return <div className="container py-5">
     <div className="row">
       <div className="col-9">
+        <h4 className="display-4 mb-5">Usermatic Example Application</h4>
         <MyComponent/>
       </div>
     </div>

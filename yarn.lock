@@ -887,10 +887,10 @@
   resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
   integrity sha512-te5lMAWii1uEJ4FwLjzdlbw3+n0FZNOvFXHxQDKeT0dilh7HOzdMzV2TrJVUzq8ep7J4Na8OUYPRLSQkJHAlrg==
 
-"@usermatic/client@^0.0.10":
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/@usermatic/client/-/client-0.0.10.tgz#42d82c7aaa287149330432ec65e64d3b87dbe068"
-  integrity sha512-fahlzT7c8kjiS3S13fYtDB97ZAC0JtTk8ES0Uvr1ygkXxjXFZbz/bUwXBq/Y2U+1t3I1Vf/tfU6mf/jTR64MvQ==
+"@usermatic/client@^0.0.11":
+  version "0.0.11"
+  resolved "https://registry.yarnpkg.com/@usermatic/client/-/client-0.0.11.tgz#10adba2ffd148c4a46585e16ee660750a7d72b70"
+  integrity sha512-layLoYFHNYbOJWQLbr3Qs3HH6MGQdgA8bk72r4jERAoi+qCKLoYYOmoOgNrvBnF0U9KDSoeDZWdHIbOESBTd8g==
   dependencies:
     apollo-boost "^0.4.4"
     graphql "^14.5.6"

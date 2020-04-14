@@ -1,10 +1,14 @@
-
 import React, { useState, MouseEvent } from 'react'
-import { useCredentials, UMLoginForm, UMLogoutButton, UMAccountCreationForm } from '@usermatic/client'
+import {
+  useToken,
+  usePrimaryEmail,
+  LoginForm,
+  LogoutButton,
+  AccountCreationForm
+} from '@usermatic/client'
 
 const HelloButton: React.FC<{}> = () => {
-  const { userJwt } = useCredentials()
-
+  const { userJwt } = useToken()
   const [response, setResponse] = useState(undefined)
 
   const onClick = (e: MouseEvent) => {
@@ -35,7 +39,8 @@ const HelloButton: React.FC<{}> = () => {
 }
 
 const LoginOrCreateAccount: React.FC<{}> = () => {
-  const { id, email, loading } = useCredentials()
+  const { id, loading } = useToken()
+  const { email } = usePrimaryEmail()
 
   if (loading) {
     return <div>Please wait...</div>
@@ -43,27 +48,27 @@ const LoginOrCreateAccount: React.FC<{}> = () => {
     return <div className="p-4 border rounded shadow bg-light">
       You are logged in as user <code>{id}</code> with email <code>{email}</code>.
       <p/>
-      <HelloButton />
+      <HelloButton/>
       <p/>
-      <UMLogoutButton />
+      <LogoutButton/>
     </div>
   } else {
     return <div>
       <h4>Log in:</h4>
       <div className="p-4 mb-5 border rounded shadow bg-light">
-        <UMLoginForm />
+        <LoginForm />
       </div>
       <h4>Or create an account:</h4>
       <div className="p-4 mb-5 border rounded shadow bg-light">
-        <UMAccountCreationForm />
+        <AccountCreationForm />
       </div>
     </div>
   }
 }
 
 const MyPage: React.FC<{}> = () => {
-  return <div className="container py-5">
-    <div className="row">
+  return <div className="container">
+    <div className="row mt-5">
       <div className="col-9">
         <h4 className="display-4 mb-5">Usermatic Example Application</h4>
         <LoginOrCreateAccount/>

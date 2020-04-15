@@ -10,7 +10,7 @@ To configure the app:
 
 1. `$ cp .env.example .env`
 
-1. Edit `.env` and replace UM_SITE_ID and UM_SITE_SECRET with the values from your usermatic application. (Get them from [https://usermatic.io/dashboard])
+1. Edit `.env` and replace UM_APP_ID and UM_APP_SECRET with the values from your usermatic application. (Get them from [https://usermatic.io/dashboard])
 
 1. `$ yarn dev`
 

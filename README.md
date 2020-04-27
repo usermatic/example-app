@@ -2,16 +2,20 @@ Welcome to the usermatic example application.
 
 To configure the app:
 
-1. Add the following line to `/etc/hosts`
+1. Clone the example app:
 
-     127.0.0.1       example-app.usermatic.local
+      `$ git clone https://github.com/usermatic/example-app`
+      
+      `$ yarn install`
 
-1. Create an application on [https://usermatic.io], and give it the hostname `example-app.usermatic.local:4000`
+1. Create an application at https://usermatic.io, and give it the hostname `localhost:4000`
 
 1. `$ cp .env.example .env`
 
-1. Edit `.env` and replace UM_APP_ID and UM_APP_SECRET with the values from your usermatic application. (Get them from [https://usermatic.io/dashboard])
+1. Edit `.env` and replace `UM_APP_ID` and `UM_APP_SECRET` with the values from your usermatic application. (Get them from https://usermatic.io/dashboard)
 
-1. `$ yarn dev`
+1. `$ yarn dev -p 4000`
 
-1. Open [http://example-app.usermatic.local:4000/] in your browser.
+1. Open http://localhost:4000/ in your browser.
+
+1. You should see two forms, one for login and one for authentication.

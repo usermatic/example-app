@@ -8,7 +8,7 @@
     "start": "next start -p 4000"
   },
   "dependencies": {
-    "@usermatic/client": "^0.0.22",
+    "@usermatic/client": "^0.0.24",
     "dotenv": "^8.2.0",
     "next": "9.3.5",
     "react": "16.13.1",

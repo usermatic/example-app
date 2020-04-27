@@ -1011,10 +1011,10 @@
   resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
   integrity sha512-te5lMAWii1uEJ4FwLjzdlbw3+n0FZNOvFXHxQDKeT0dilh7HOzdMzV2TrJVUzq8ep7J4Na8OUYPRLSQkJHAlrg==
 
-"@usermatic/client@^0.0.22":
-  version "0.0.22"
-  resolved "https://registry.yarnpkg.com/@usermatic/client/-/client-0.0.22.tgz#395bb2434529c8de7dde6cd440a4205aeb106388"
-  integrity sha512-q/YYXDsWeJzNa8uCVp8OnWPFjjUTKo5ZDbOGL0pLZJQxlaVAyqNLwHrCF5ftJUi5gCx5+bxG/LejC5AY1kD5TQ==
+"@usermatic/client@^0.0.24":
+  version "0.0.24"
+  resolved "https://registry.yarnpkg.com/@usermatic/client/-/client-0.0.24.tgz#d01cd3cc07e15b68889fb42491818aa73bfe0e6d"
+  integrity sha512-2UloOcWEY7Ytl7ftxJ7PoIt9HO6r5txQYGyuEX/RhmqZDYZ6pELt44ZNRbwVV53rA3gzqlZ/i3WflWJTHiUprw==
   dependencies:
     apollo-boost "^0.4.4"
     classnames "^2.2.6"

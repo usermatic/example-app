@@ -2,7 +2,7 @@
 
 import jwt from 'jsonwebtoken'
 
-const verifyJwt = (authHeader?: string, secret: string) => {
+const verifyJwt = (authHeader: string | undefined, secret: string) => {
   if (!authHeader) { return undefined }
   return jwt.verify(authHeader, process.env.UM_APP_SECRET)
 }

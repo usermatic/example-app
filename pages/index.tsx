@@ -2,10 +2,13 @@ import React, { useState, MouseEvent } from 'react'
 import {
   useToken,
   usePrimaryEmail,
+} from '@usermatic/client'
+
+import {
   LoginForm,
   LogoutButton,
   AccountCreationForm
-} from '@usermatic/client'
+} from '@usermatic/client/components'
 
 const HelloButton: React.FC<{}> = () => {
   const { userJwt } = useToken()

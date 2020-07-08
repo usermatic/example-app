@@ -8,7 +8,7 @@
     "start": "next start -p 4000"
   },
   "dependencies": {
-    "@usermatic/client": "^0.0.51",
+    "@usermatic/client": "^0.0.53",
     "@usermatic/server": "^0.0.9",
     "dotenv": "^8.2.0",
     "next": "9.3.5",

@@ -11,12 +11,12 @@
     "@usermatic/client": "^0.0.60",
     "@usermatic/server": "^0.0.10",
     "dotenv": "^8.2.0",
-    "next": "9.3.5",
+    "next": "9.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "@types/react": "^16.9.34",
-    "typescript": "^3.8.3"
+    "@types/react": "^16.9.46",
+    "typescript": "^3.9.7"
   }
 }
